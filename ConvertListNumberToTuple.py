@@ -1,0 +1,15 @@
+#Viết chương trình chấp nhận một chuỗi số, phân tách bằng dấu phẩy từ giao diện điều khiển, tạo ra một danh sách và một tuple chứa mọi số.
+
+print("Input your list number and use ',' between two number")
+listNumber = input()
+
+#Cut ',' in array user input number
+listNumber = listNumber.replace(" ", "")
+values = listNumber.split(",")
+listTuple = tuple(values)
+
+print("String array: ")
+print(values)
+
+print("Tuple list: ")
+print(listTuple)
